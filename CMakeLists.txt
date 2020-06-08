@@ -8,24 +8,20 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -ltbb")
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror -Wno-long-long -pedantic")
 #set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror -pedantic")
 
-add_subdirectory(w1_macroses)
-add_subdirectory(simp_proj_1)
-add_subdirectory(BFS)
-add_subdirectory(class_templates)
-add_subdirectory(yandex_algorithms)
+add_executable(Yandex_Red main.cpp)
 
-#Week 2
-add_subdirectory(CODE_OPTIMISATION)
-add_subdirectory(OUT_STREAM_BUFFERISATION)
-add_subdirectory(ALGORITHM_COMPLEXITY)
-add_subdirectory(MEMORY_MODEL)
-add_subdirectory(EFFECTIVE_CONTAINER_USAGE)
+add_subdirectory(W1_MACROSES)
+add_subdirectory(W1_DEFS)
+add_subdirectory(W1_CLASS_TEMPLATES)
 
-# W 5
+add_subdirectory(W2_CODE_OPTIMISATION)
+add_subdirectory(W2_OUT_STREAM_BUFFERISATION)
+
+add_subdirectory(W3_ALGORITHM_COMPLEXITY)
+add_subdirectory(W3_MEMORY_MODEL)
+
+add_subdirectory(W4_EFFECTIVE_CONTAINER_USAGE)
+
 add_subdirectory(W5_1_MOVING_OBJECTS)
 add_subdirectory(W5_2_BASIC_MULTYTHREADING)
-
-
-add_subdirectory(0_LEET_CODE)
-
-add_executable(Yandex_Red main.cpp)
+add_subdirectory(W5_1_MOVING_OBJECTS_2)
